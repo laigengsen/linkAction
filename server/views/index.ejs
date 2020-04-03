@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>短链接广告展示页</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        body{
+            overflow: hidden;
+        }
+        .ad-box{
+            width: 100px;
+            height: 380px;
+            background-color: rebeccapurple;
+            color: white;
+            position: absolute;
+            top: 30%;
+        }
+        #shortnet-iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .ad-img{
+            width: 500px;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com"><section class="ad-box"></section></a>
+    <img src="/images/ad.png" class="ad-img" alt="图片加载失败">
+    <iframe id="shortnet-iframe" src="<%= url %>"></iframe>
+</body>
+</html>
